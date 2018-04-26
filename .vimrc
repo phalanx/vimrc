@@ -1,4 +1,11 @@
+
 "Colour settings
+if &term =~ 'xterm-256color' || &term =~ 'screen-256color' || &term =~ 'xterm'
+    set t_Co=256
+    set t_Sf=256
+    set t_Sb=256
+    color desert
+endif
 color desert
 if exists('+colorcolumn')
   set colorcolumn=81                    " Highlight column 81
